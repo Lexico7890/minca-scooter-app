@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'minca-scooter-app';
+  sendBoolean: boolean = true;
+
+  sendBooleanNav(bool: boolean){
+    this.sendBoolean = bool;
+    console.log(this.sendBoolean);
+  }
 }
