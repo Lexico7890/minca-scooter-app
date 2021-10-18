@@ -1,40 +1,69 @@
-<div>
-  <ul [className] = "sendBooleanNav ? 'classFalse' : 'hideText'">
-    <li>
-      <a [className]="activeBool[0] ? 'active' : 'classFalse'"
-      (click)="enviarInfo(0, 'Mis Facturas')"
-        ><fa-icon [icon]="['fas', 'calendar']"></fa-icon><span>Programación</span></a
-      >
-    </li>
-    <li>
-      <a [className]="activeBool[1] ? 'active' : 'classFalse'"
-      (click)="enviarInfo(1, 'Mis Facturas')"
-        ><fa-icon [icon]="['fas', 'users']"></fa-icon><span>Usuarios</span></a
-      >
-    </li>
-    <li>
-      <a [className]="activeBool[2] ? 'active' : 'classFalse'" 
-      (click)="enviarInfo(2, 'Mis Facturas')"
-        ><fa-icon [icon]="['fas', 'bicycle']"></fa-icon><span>Scooters</span></a
-      >
-    </li>
-    <li>
-      <a [className]="activeBool[3] ? 'active' : 'classFalse'"
-      (click)="enviarInfo(3, 'Mis Facturas')"
-        ><fa-icon [icon]="['fas', 'plus-square']"></fa-icon><span>Servicios</span></a
-      >
-    </li>
-    <li>
-      <a [className]="activeBool[4] ? 'active' : 'classFalse'"
-      (click)="enviarInfo(4, 'Mis Facturas')"
-        ><fa-icon [icon]="['fas', 'list']"></fa-icon><span>Items</span></a
-      >
-    </li>
-    <li>
-      <a [className]="activeBool[5] ? 'active' : 'classFalse'"
-      (click)="enviarInfo(5, 'Mis Facturas')"
-        ><fa-icon [icon]="['fas', 'map']"></fa-icon><span>Sedes</span></a
-      >
-    </li>
-  </ul>
+
+<div class="sidebar">
+  <div class="sidebarInt">
+    <div class="logo_content">
+      <div class="logo">
+        <fa-icon [icon]="['fas', 'bomb']" size="2x"></fa-icon>
+      </div>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a
+            [className]="activeBool[0] ? 'active' : 'classFalse'"
+            (click)="enviarInfo(0, 'Mis Facturas')"
+            ><fa-icon [icon]="['fas', 'calendar']"></fa-icon
+          ></a>
+          <span class="links_name">Programación</span>
+        </li>
+        <li>
+          <a
+            [className]="activeBool[1] ? 'active' : 'classFalse'"
+            (click)="enviarInfo(1, 'Mis Facturas')"
+            ><fa-icon [icon]="['fas', 'users']"></fa-icon
+          ></a>
+          <span class="links_name">Usuarios</span>
+        </li>
+        <li>
+          <a
+            [className]="activeBool[2] ? 'active' : 'classFalse'"
+            (click)="enviarInfo(2, 'Mis Facturas')"
+            ><fa-icon [icon]="['fas', 'bicycle']"></fa-icon
+          ></a>
+          <span class="links_name">Scooters</span>
+        </li>
+        <li>
+          <a
+            [className]="activeBool[3] ? 'active' : 'classFalse'"
+            (click)="enviarInfo(3, 'Mis Facturas')"
+            ><fa-icon [icon]="['fas', 'plus-square']"></fa-icon
+          ></a>
+          <span class="links_name">Servicios</span>
+        </li>
+        <li>
+          <a
+            [className]="activeBool[4] ? 'active' : 'classFalse'"
+            (click)="enviarInfo(4, 'Mis Facturas')"
+            ><fa-icon [icon]="['fas', 'list']"></fa-icon
+          ></a>
+          <span class="links_name">Items</span>
+        </li>
+        <li>
+          <a
+            [className]="activeBool[5] ? 'active' : 'classFalse'"
+            (click)="enviarInfo(5, 'Mis Facturas')"
+            ><fa-icon [icon]="['fas', 'map']"></fa-icon
+          ></a>
+          <span class="links_name">Sedes</span>
+        </li>
+      </ul>
+    </div>
+    <div class="outlog">
+      <a href="">
+        <fa-icon [icon]="['fas', 'power-off']" size="2x"></fa-icon>
+      </a>
+      <span class="links_name">Salir</span>
+    </div>
+  </div>
 </div>
+

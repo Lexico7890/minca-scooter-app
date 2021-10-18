@@ -12,7 +12,9 @@ import {
   faBicycle,
   faPlusSquare, 
   faList,
-  faMap
+  faMap,
+  faPowerOff,
+  faBomb
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -31,7 +33,9 @@ export class AppModule {
       faBicycle,
       faPlusSquare,
       faList,
-      faMap
+      faMap,
+      faPowerOff,
+      faBomb
     );
   }
 }

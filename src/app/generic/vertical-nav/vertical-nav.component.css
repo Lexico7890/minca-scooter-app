@@ -1,49 +1,137 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: #c93335;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  li a {
-    display: block;
-    color: #000;
-    padding: 15px 16px;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  
-  li a.active {
-    background-color: #E77841;
-    color: white;
-    font-weight: 700;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  background: #11101d;
+  padding: 6px 14px;
+  align-items: center;
+}
 
-  a > span{
-    margin-left: 7%;
-  }
+.sidebarInt{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 100%;
+  padding: 20px 0px;
+}
 
-  .hideText{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 2.5%;
-    background-color: #c93335;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
+.logo_content .logo{
+  color: #fff;
+  height: 32px;
+  width: 100%;
+  margin-top: 10%;
+}
 
-  .hideText span{
-    display:none;
-  }
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sidebar ul li{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 10% 4%;
+  list-style: none;
+  line-height: 50px;
+  
+}
+
+.sidebar ul li span{
+  position: absolute;
+  left: 62px;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  height: 35px;
+  width: 122px;
+  background: rgb(204, 193, 193);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  line-height: 35px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.outlog span{
+  position: absolute;
+  left: 62px;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  height: 35px;
+  width: 122px;
+  background: rgb(204, 193, 193);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  line-height: 35px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.outlog:hover span{
+  transition: all 0.5s ease;
+  top: 92%;
+  opacity: 1;
+  color: #000;
+  font-weight: 600;
+}
+
+.sidebar ul li:hover span{
+  transition: all 0.5s ease;
+  top: 50%;
+  opacity: 1;
+}
+
+.sidebar ul li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 12px;
+}
+
+.sidebar ul li a fa-icon{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sidebar ul li a:hover{
+  color: #11101d;
+  background: #c93335;
+}
+
+.sidebar .outlog{
+  color: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar .outlog a{
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 80px;
+  align-items: center;
+  justify-content:center;
+}
+
+.sidebar ul li a.active {
+  background-color: #fff;
+  font-weight: 700;
+  color: #11101d;
+  margin-right: -50%;
+}
+
+
+
 
