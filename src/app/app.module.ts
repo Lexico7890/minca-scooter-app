@@ -16,10 +16,11 @@ import {
   faPowerOff,
   faBomb
 } from '@fortawesome/free-solid-svg-icons';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, GenericModule],
+  imports: [BrowserModule, GenericModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

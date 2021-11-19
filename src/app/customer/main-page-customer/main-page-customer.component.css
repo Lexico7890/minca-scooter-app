@@ -1,0 +1,76 @@
+*{
+    display: flex;
+}
+.box-card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    padding: 4vw 9vw;
+}
+.card1{
+    position:relative;
+    width: 35vh;
+    height: 20vh;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,.15),
+    inset -5px -5px 15px rgba(255,255,255,.15),
+    5px 5px 15px rgba(0,0,0,.15),
+    -5px -5px 15px rgba(255,255,255,.15);
+}
+.card1::before{
+    content: url('../../../assets/images/add_user.svg');
+    position: absolute;
+    inset: 5px;
+    background: #c93335;
+    border-radius: 35px;
+    transition: 0.5s;
+}
+.card1:hover::before{
+    transform: translate(40px, -40px);
+    box-shadow: -30px 30px 50px rgba(0,0,0,.25);
+}
+.card2{
+    position:relative;
+    width: 35vh;
+    height: 20vh;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,.15),
+    inset -5px -5px 15px rgba(255,255,255,.15),
+    5px 5px 15px rgba(0,0,0,.15),
+    -5px -5px 15px rgba(255,255,255,.15);
+}
+.card2::before{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #E77841;
+    border-radius: 35px;
+    transition: 0.5s;
+}
+.card2:hover::before{
+    transform: translate(40px, 0px);
+    box-shadow: -30px 30px 50px rgba(0,0,0,.25);
+}
+.card3{
+    position:relative;
+    width: 35vh;
+    height: 20vh;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,.15),
+    inset -5px -5px 15px rgba(255,255,255,.15),
+    5px 5px 15px rgba(0,0,0,.15),
+    -5px -5px 15px rgba(255,255,255,.15);
+}
+.card3::before{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #979696;
+    border-radius: 35px;
+    transition: 0.5s;
+}
+.card3:hover::before{
+    transform: translate(40px, 40px);
+    box-shadow: -30px 30px 50px rgba(0,0,0,.25);
+}
