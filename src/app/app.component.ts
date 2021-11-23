@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CustomerButton} from './interfaces/buttons'
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'minca-scooter-app';
   sendBoolean: boolean = true;
-
+  customerButtons: string[] = []
+  
   sendBooleanNav(bool: boolean){
     this.sendBoolean = bool;
     console.log(this.sendBoolean);
+  }
+
+  sendInfoButtons(datos: string[]){
+    this.customerButtons = datos;
+    console.log(datos)
   }
 }

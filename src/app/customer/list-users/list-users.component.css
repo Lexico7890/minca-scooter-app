@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@600&display=swap&effect=shadow-multiple|3d-float');
+
+h2{
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    color: #979696;
+    text-align: center;
+}

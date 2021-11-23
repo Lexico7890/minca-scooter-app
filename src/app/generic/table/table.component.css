@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@600&display=swap&effect=shadow-multiple|3d-float');
+
+h2{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    color: #979696;
+    text-align: center;
+}
+.containerTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.containerTable::before{
+  content: '';
+  position: absolute;
+  width: 17vw;
+  height: 17vw;
+  background: linear-gradient(#fff5f5, #cc0408);
+  border-radius:50%;
+  transform: translate(-25vw,-12vw);
+}
+.containerTable::after{
+  content: '';
+  position: absolute;
+  width: 17vw;
+  height: 17vw;
+  background: linear-gradient(#E77841,#faf3ee);
+  border-radius:50%;
+  transform: translate(25vw,12vw);
+}
+.table {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.table .glass{
+    position: absolute;
+    width: 50vw;
+    height: 32vw;
+    background: rgba(255,255,255,0.5);
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-right: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    z-index: 1;
+    backdrop-filter: blur(25px);
+}

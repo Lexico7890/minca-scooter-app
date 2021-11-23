@@ -1,3 +1,16 @@
 .container{
-    height: 100vh;
+    display: flex;
 }
+.contentUno{
+    height: 100vh;
+    width: 4%;
+}
+.contentDos{
+    height: 100vh;
+    width: 26%;
+}
+.contentTres{
+    height: 100vh;
+    width: 70%;
+}
+

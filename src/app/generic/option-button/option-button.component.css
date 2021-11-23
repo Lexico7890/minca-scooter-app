@@ -4,9 +4,10 @@
 .box-card{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
-    padding: 4vw 9vw;
+    padding: 4vw 0;
 }
 .card{
     position:relative;
@@ -28,7 +29,7 @@
     align-items: center;
 }
 .cardImg1:hover{
-    transform: translate(40px, -40px);
+    transform: translate(1vw, -1vw);
     box-shadow: -30px 30px 50px rgba(0,0,0,.25);
 }
 img{
@@ -46,7 +47,7 @@ img{
     align-items: center;
 }
 .cardImg2:hover{
-    transform: translate(40px, 0px);
+    transform: translate(1vw, 0px);
     box-shadow: -30px 30px 50px rgba(0,0,0,.25);
 }
 
@@ -60,6 +61,12 @@ img{
     align-items: center;
 }
 .cardImg3:hover{
-    transform: translate(40px, 40px);
+    transform: translate(1vw, 1vw);
     box-shadow: -30px 30px 50px rgba(0,0,0,.25);
+}
+img{
+    max-width: 10vw;
+    max-height: 10vw;
+    min-width: 7vw;
+    min-height: 7vw;
 }

@@ -1,6 +1,9 @@
 <div class="container">
-  <div class="content">
-    <app-vertical-nav [sendBooleanNav]="sendBoolean"></app-vertical-nav>
+  <div class="contentUno">
+    <app-vertical-nav (sendInfoImage)="sendInfoButtons($event)"></app-vertical-nav>
   </div>
-  <div class="content"><router-outlet></router-outlet></div>
+  <div class="contentDos">
+    <app-option-button [namePath]="customerButtons"></app-option-button>
+  </div>
+  <div class="contentTres"><router-outlet></router-outlet></div>
 </div>

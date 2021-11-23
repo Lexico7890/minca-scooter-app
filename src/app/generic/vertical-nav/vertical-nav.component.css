@@ -7,6 +7,7 @@
   background: #11101d;
   padding: 6px 14px;
   align-items: center;
+  z-index: 1;
 }
 
 .sidebarInt{
@@ -56,6 +57,7 @@
   text-align: center;
   opacity: 0;
   pointer-events: none;
+  
 }
 
 .outlog span{
@@ -80,12 +82,14 @@
   opacity: 1;
   color: #000;
   font-weight: 600;
+  
 }
 
 .sidebar ul li:hover span{
   transition: all 0.5s ease;
   top: 50%;
   opacity: 1;
+  
 }
 
 .sidebar ul li a{

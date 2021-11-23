@@ -10,8 +10,9 @@
       <ul>
         <li>
           <a
+            [className]=""
             [className]="activeBool[0] ? 'active' : 'classFalse'"
-            (click)="enviarInfo(0, 'Mis Facturas')"
+            (click)="enviarInfo(0, 'Mis Facturas', 0)"
             ><fa-icon [icon]="['fas', 'calendar']"></fa-icon
           ></a>
           <span class="links_name">Programación</span>
@@ -20,15 +21,16 @@
           <a
             routerLink="customer"
             [className]="activeBool[1] ? 'active' : 'classFalse'"
-            (click)="enviarInfo(1, 'Mis Facturas')"
+            (click)="enviarInfo(1, 'Mis Facturas', 1)"
             ><fa-icon [icon]="['fas', 'users']"></fa-icon
           ></a>
           <span class="links_name">Usuarios</span>
         </li>
         <li>
           <a
+          routerLink="scooter"
             [className]="activeBool[2] ? 'active' : 'classFalse'"
-            (click)="enviarInfo(2, 'Mis Facturas')"
+            (click)="enviarInfo(2, 'Mis Facturas', 2)"
             ><fa-icon [icon]="['fas', 'bicycle']"></fa-icon
           ></a>
           <span class="links_name">Scooters</span>
@@ -36,7 +38,7 @@
         <li>
           <a
             [className]="activeBool[3] ? 'active' : 'classFalse'"
-            (click)="enviarInfo(3, 'Mis Facturas')"
+            (click)="enviarInfo(3, 'Mis Facturas', 3)"
             ><fa-icon [icon]="['fas', 'plus-square']"></fa-icon
           ></a>
           <span class="links_name">Servicios</span>
@@ -44,7 +46,7 @@
         <li>
           <a
             [className]="activeBool[4] ? 'active' : 'classFalse'"
-            (click)="enviarInfo(4, 'Mis Facturas')"
+            (click)="enviarInfo(4, 'Mis Facturas', 4)"
             ><fa-icon [icon]="['fas', 'list']"></fa-icon
           ></a>
           <span class="links_name">Items</span>
@@ -52,7 +54,7 @@
         <li>
           <a
             [className]="activeBool[5] ? 'active' : 'classFalse'"
-            (click)="enviarInfo(5, 'Mis Facturas')"
+            (click)="enviarInfo(5, 'Mis Facturas', 5)"
             ><fa-icon [icon]="['fas', 'map']"></fa-icon
           ></a>
           <span class="links_name">Sedes</span>
